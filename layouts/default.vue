@@ -4,7 +4,7 @@
     <my-footer/>
   </div>
 </template>
-
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 import MyFooter from '~components/Footer.vue'
 
@@ -14,7 +14,7 @@ export default {
   }
 }
 </script>
-
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style>
 .container
 {

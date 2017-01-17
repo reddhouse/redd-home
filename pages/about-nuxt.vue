@@ -12,6 +12,7 @@
     </nuxt-link>
   </section>
 </template>
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 export default {
   data ({ req }) {
@@ -26,7 +27,7 @@ export default {
   }
 }
 </script>
-
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
 .title
 {

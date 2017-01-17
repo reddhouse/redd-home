@@ -1,44 +1,25 @@
 <template>
   <section class="container">
     <div class="sandbox-component">
-      <p> Message: {{ message }}</p>
+      <h4>We're inside of the Sandbox component</h4>
+      <p>
+        The links/components below are intended to showcase individual
+        <br>
+        tools or techniques that I've picked up around the web.
+      </p>
+
       <div>
-        <nuxt-link to="/hello-parent">Hello Child/Parent</nuxt-link>
+        <nuxt-link to="/hello-vuex">Hello Vuex</nuxt-link>
       </div>
+
     </div>
   </section>
 </template>
-<!-- 726726726726726726726726726726726726726726726726726726726726726726726 -->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
-// import { mapGetters, mapActions } from 'vuex'
-// import HelloChild from './HelloChild'
 
-export default {
-  name: 'sandbox-component',
-  props: ['propsIn'],
-  data () {
-    return {
-      message: "Here's data from the Sandbox Component",
-      propsOut: {
-
-      }
-    }
-  },
-  computed: {
-    // ...mapGetters(['titleState'])
-  },
-  methods: {
-    // ...mapActions(['setTitle'])
-  },
-  filters: {
-
-  },
-  components: {
-    // HelloChild
-  }
-}
 </script>
-<!-- 726726726726726726726726726726726726726726726726726726726726726726726 -->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
 
 </style>

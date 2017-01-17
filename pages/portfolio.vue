@@ -1,11 +1,11 @@
 <template>
   <section class="container">
     <div class="hello-component">
-      <p> Message: {{ message }}</p>
+      <h4>We're inside of the {{ message }} component</h4>
     </div>
   </section>
 </template>
-<!-- 726726726726726726726726726726726726726726726726726726726726726726726 -->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 // import { mapGetters, mapActions } from 'vuex'
 // import HelloChild from './HelloChild'
@@ -15,7 +15,7 @@ export default {
   props: ['propsIn'],
   data () {
     return {
-      message: "Here's data from the Portfolio Component",
+      message: "Portfolio",
       propsOut: {
 
       }
@@ -35,7 +35,7 @@ export default {
   }
 }
 </script>
-<!-- 726726726726726726726726726726726726726726726726726726726726726726726 -->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" />
+    <img src="../assets/img/red-house.png" alt="Nobody's Home" class="logo" />
     <h1 class="title">
       {{ error.statusCode }}
     </h1>
@@ -12,12 +12,13 @@
     </nuxt-link>
   </section>
 </template>
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 export default {
   props: ['error']
 }
 </script>
-
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
 .title
 {
@@ -33,5 +34,10 @@ export default {
 .button
 {
   margin-top: 50px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
 }
 </style>

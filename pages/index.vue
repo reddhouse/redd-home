@@ -16,7 +16,7 @@
     </div>
   </section>
 </template>
-
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 export default {
   // Nuxt uses vue-meta to set this (among other meta options).
@@ -25,7 +25,7 @@ export default {
   }
 }
 </script>
-
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
 .title
 {

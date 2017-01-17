@@ -1,0 +1,36 @@
+<template>
+  <div>
+    <h4>This counter uses our store to get/set global (app) state</h4>
+    <p>Value: {{ count }}</p>
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+    <button @click="incrementIfOdd">Increment if odd</button>
+    <button @click="incrementAsync">Increment async</button>
+    <br>
+    <div>
+      <p>Recent History (last 5 entries):</p>
+      {{ recentHistory }}
+    </div>
+  </div>
+</template>
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<script>
+import { mapGetters, mapActions } from 'vuex'
+
+export default {
+  computed: mapGetters([
+    'count',
+    'recentHistory'
+  ]),
+  methods: mapActions([
+    'increment',
+    'decrement',
+    'incrementIfOdd',
+    'incrementAsync'
+  ])
+}
+</script>
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<style scoped>
+
+</style>

@@ -1,5 +1,5 @@
 <template>
   <footer>
-    Be the Footer
+    <nuxt-link to="/">Start Over</nuxt-link>
   </footer>
 </template>

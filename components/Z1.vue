@@ -5,7 +5,7 @@
     </div>
   </section>
 </template>
-<!-- 726726726726726726726726726726726726726726726726726726726726726726726 -->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 // import { mapGetters, mapActions } from 'vuex'
 // import HelloChild from './HelloChild'
@@ -34,7 +34,7 @@ export default {
   }
 }
 </script>
-<!-- 726726726726726726726726726726726726726726726726726726726726726726726 -->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
 
 </style>
