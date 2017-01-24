@@ -1,7 +1,8 @@
 <template>
-  <section class="container">
+  <section class="page-container">
     <div class="hello-component">
       <h4>We're inside of the {{ message }} component</h4>
+      <p>Coming soon...</p>
     </div>
   </section>
 </template>

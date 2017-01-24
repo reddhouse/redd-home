@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="counter-component">
     <h4>This counter uses our store to get/set global (app) state</h4>
     <p>Value: {{ count }}</p>
     <button @click="increment">+</button>
@@ -32,5 +32,11 @@ export default {
 </script>
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
+
+.counter-component {
+  max-width: 500px;
+  width: 95%;
+  margin: 0 auto;
+}
 
 </style>

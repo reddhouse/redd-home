@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="page-container">
     <img src="../assets/img/red-house.png" alt="reddhouse" class="logo" />
     <h1 class="title">justin builds stuff on the web</h1>
     <p>Shout out to Vue, Nuxt, and Zeit.co</p>

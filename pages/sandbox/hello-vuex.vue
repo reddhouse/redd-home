@@ -1,10 +1,19 @@
 <template>
-  <section class="container">
+  <section class="page-sub-container">
     <div class="hello-vuex-component">
-      <h4>We're inside of the {{ message }} component</h4>
-      <p>Vuex encourages a central source of app state and a uni-directional data flow</p>
+      <div class="introText">
+        <h4>This is the {{ message }} component</h4>
+      </div>
+
+      <div class="flexContainer">
+        <div class="firstThird"></div>
+        <div class="secondThird">
+          Vuex encourages a central source of app state and a uni-directional data flow similar to Redux.
+          Events "dispatch" actions which may "commit" mutations to our store, resulting in reactive updates to the DOM.
+        </div>
+        <div class="thirdThird"></div>
+      </div>
       <counter></counter>
-      <h4>Our Artist Search component will let us query Spotify</h4>
       <artist-search></artist-search>
       <br>
       <div
@@ -15,36 +24,26 @@
         </div>
       </div>
       <div
-        v-else>Loading ...</div>
+        v-else>Loading ...
+      </div>
     </div>
   </section>
 </template>
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 import { mapGetters } from 'vuex'
-import Counter from '~components/Counter.vue'
-import ArtistSearch from '~components/ArtistSearch.vue'
+import Counter from '~components/sandbox/Counter.vue'
+import ArtistSearch from '~components/sandbox/ArtistSearch.vue'
 
 export default {
   name: 'hello-vuex-component',
-  props: ['propsIn'],
   data () {
     return {
-      propsOut: {
-
-      },
-
       message: 'Hello Vuex'
     }
   },
   computed: {
     ...mapGetters(['artists', 'isBusy'])
-  },
-  methods: {
-
-  },
-  filters: {
-
   },
   components: {
     Counter,
@@ -54,5 +53,11 @@ export default {
 </script>
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
+
+.introText {
+  max-width: 500px;
+  width: 95%;
+  margin: 0 auto;
+}
 
 </style>
