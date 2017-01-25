@@ -6,7 +6,7 @@
     </div>
     <br>
     <input type='text' v-model='name' />
-    <button @click='search(name)'>Search></button>
+    <button v-on:click='search(name)'>Search></button>
   </div>
 </template>
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->

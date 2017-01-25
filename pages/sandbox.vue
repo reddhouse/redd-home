@@ -1,7 +1,7 @@
 <template>
   <section class="page-container">
     <div class="sandbox-component">
-      <h4>We're inside of the Sandbox component</h4>
+      <h4>We're inside of the Sandbox Page/Component</h4>
       <div class="introText">
         The links/components below are intended to showcase individual
         tools and techniques that I've picked up around the web.
@@ -21,6 +21,10 @@
 
         <div>
           <nuxt-link to="/sandbox/super-data">Supercharged Nuxt Data</nuxt-link>
+        </div>
+
+        <div>
+          <nuxt-link to="/sandbox/slot-switcher">Dynamic Slot Switcher</nuxt-link>
         </div>
 
       </div>

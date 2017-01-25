@@ -2,10 +2,10 @@
   <div class="counter-component">
     <h4>This counter uses our store to get/set global (app) state</h4>
     <p>Value: {{ count }}</p>
-    <button @click="increment">+</button>
-    <button @click="decrement">-</button>
-    <button @click="incrementIfOdd">Increment if odd</button>
-    <button @click="incrementAsync">Increment async</button>
+    <button v-on:click="increment">+</button>
+    <button v-on:click="decrement">-</button>
+    <button v-on:click="incrementIfOdd">Increment if odd</button>
+    <button v-on:click="incrementAsync">Increment async</button>
     <br>
     <div>
       <p>Recent History (last 5 entries):</p>
