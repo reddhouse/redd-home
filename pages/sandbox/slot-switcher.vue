@@ -1,6 +1,6 @@
 <template>
   <section class="page-sub-container">
-    <div class="howdy-test-component">
+    <div class="slot-switcher-page">
 
       <div class="introText">
         <h4>This is the Slot Switcher component</h4>
@@ -35,27 +35,28 @@
 <script>
 import TwoSlots from '~/components/sandbox/TwoSlots.vue'
 export default {
+  name: 'slot-switcher-page',
   data () {
     return {
       switched: false
     }
   },
   computed: {
-   slot_1 () {
-     return this.switched ? 'lower_slot' : 'upper_slot'
-   },
-   slot_2 () {
-     return this.switched ? 'upper_slot' : 'lower_slot'
-   }
- },
- methods: {
-   toggleSwitch () {
-     this.switched ? this.switched = false : this.switched = true
-   }
- },
- components: {
-  'two-slots': TwoSlots
- },
+    slot_1 () {
+      return this.switched ? 'lower_slot' : 'upper_slot'
+    },
+    slot_2 () {
+      return this.switched ? 'upper_slot' : 'lower_slot'
+    }
+  },
+  methods: {
+    toggleSwitch () {
+      this.switched ? this.switched = false : this.switched = true
+    }
+  },
+  components: {
+    'two-slots': TwoSlots
+  },
 }
 </script>
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->

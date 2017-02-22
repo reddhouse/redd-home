@@ -1,12 +1,8 @@
 <template>
-  <section class="page-container">
-    <div class="portfolio-page">
+  <section class="container">
+    <div class="showcase-item-component">
 
-      <h4>We're inside of the {{ message }} Page/Component</h4>
-      <p>Coming soon...</p>
-
-      <!-- Iterate over array of portfolio projects. Pass props to showcase-item, etc -->
-      <showcase-item></showcase-item>
+      <p>This is an individual showcase item</p>
 
     </div>
   </section>
@@ -14,15 +10,13 @@
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 // import { mapGetters, mapActions } from 'vuex'
-import ShowcaseItem from '~/components/portfolio/ShowcaseItem.vue'
+// import HelloChild from './HelloChild'
 
 export default {
-  name: 'portfolio-page',
-  head: { title: 'Reddhouse\'s Portfolio' },
+  name: 'showcase-item-component',
   props: ['propsIn'],
   data () {
     return {
-      message: "Portfolio",
       propsOut: {
 
       }
@@ -38,7 +32,7 @@ export default {
 
   },
   components: {
-    ShowcaseItem
+    // HelloChild
   }
 }
 </script>

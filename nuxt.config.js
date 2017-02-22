@@ -20,5 +20,12 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' }
+  loading: { color: '#3B8070' },
+  /*
+  ** Reduce the size of our bundle by including external libraries only once
+  ** in our application.
+  */
+  build: {
+    vendor: ['axios']
+  }
 }

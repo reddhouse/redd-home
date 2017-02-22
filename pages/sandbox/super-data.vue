@@ -1,6 +1,6 @@
 <template>
   <section class="page-sub-container">
-    <div class="super-data-component">
+    <div class="super-data-page">
 
       <div class="introText">
         <h4>This is the Super Data component</h4>
@@ -33,11 +33,13 @@ import axios from 'axios'
 const api = `http://swapi.co/api/films/`
 
 export default {
-  name: 'super-data-component',
+  name: 'super-data-page',
   data () {
     return axios.get(api)
     // Put the returned data on the films property of our data object
-    .then(res => ({films:res.data.results}))
+    .then(res => ({
+      films: res.data.results
+    }))
   },
   computed: {
     // ...mapGetters(['titleState'])

@@ -1,6 +1,6 @@
 <template>
   <section class="page-sub-container">
-    <div class="howdy-test-component">
+    <div class="howdy-test-page">
 
       <div class="introText">
         <h4>This is the Howdy Test component</h4>

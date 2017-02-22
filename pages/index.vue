@@ -12,7 +12,8 @@
     </nuxt-link>
     <div>
       <br>
-      <nuxt-link to="/about-nuxt">Nuxt Does SSR!</nuxt-link>
+      <a href="https://github.com/reddhouse/redd-home" target="_blank">See the Code!</a>
+      <!-- <nuxt-link to="/about-nuxt">Nuxt Does SSR!</nuxt-link> -->
     </div>
   </section>
 </template>
@@ -21,7 +22,7 @@
 export default {
   // Nuxt uses vue-meta to set this (among other meta options).
   head: {
-    title: 'redd-home'
+    title: 'Redd.house'
   }
 }
 </script>

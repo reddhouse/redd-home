@@ -1,6 +1,6 @@
 <template>
   <section class="page-container">
-    <div class="sandbox-component">
+    <div class="sandbox-page">
       <h4>We're inside of the Sandbox Page/Component</h4>
       <div class="introText">
         The links/components below are intended to showcase individual
@@ -27,6 +27,10 @@
           <nuxt-link to="/sandbox/slot-switcher">Dynamic Slot Switcher</nuxt-link>
         </div>
 
+        <div>
+          <nuxt-link to="/sandbox/route-watcher">Route Watcher</nuxt-link>
+        </div>
+
       </div>
 
       <nuxt-child></nuxt-child>
@@ -38,6 +42,7 @@
 <script>
 export default {
   name: 'sandbox-page',
+  head: { title: 'Sandbox' },
   data () {
     return {
       dynamicLink: '/sandbox/howdy-test'

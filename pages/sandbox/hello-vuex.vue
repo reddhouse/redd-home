@@ -1,6 +1,6 @@
 <template>
   <section class="page-sub-container">
-    <div class="hello-vuex-component">
+    <div class="hello-vuex-page">
       <div class="introText">
         <h4>This is the {{ message }} component</h4>
       </div>
@@ -36,7 +36,7 @@ import Counter from '~components/sandbox/Counter.vue'
 import ArtistSearch from '~components/sandbox/ArtistSearch.vue'
 
 export default {
-  name: 'hello-vuex-component',
+  name: 'hello-vuex-page',
   data () {
     return {
       message: 'Hello Vuex'
