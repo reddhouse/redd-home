@@ -19,11 +19,11 @@
 
       <div class="linkList">
         <div>
-          <nuxt-link to="/sandbox/route-watcher/1">Route One</nuxt-link>
+          <nuxt-link class="subLink" to="/sandbox/route-watcher/1">Route One</nuxt-link>
         </div>
 
         <div>
-          <nuxt-link to="/sandbox/route-watcher/2">Route Two</nuxt-link>
+          <nuxt-link class="subLink" to="/sandbox/route-watcher/2">Route Two</nuxt-link>
         </div>
       </div>
 
@@ -62,16 +62,20 @@ export default {
 }
 
 .linkList {
-  margin: 20px auto;
+  margin: 24px auto;
 }
 
 .linkList div {
   display: inline;
-  padding: 5px;
+  padding: 6px;
 }
 
-nuxt-link {
-  background-color: blue;
+/*a, a:hover, a:focus, a:visited {
+  color: red;
+}*/
+
+.subLink {
+  color: blue;
 }
 
 </style>

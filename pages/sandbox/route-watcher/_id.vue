@@ -1,24 +1,21 @@
 <template>
   <section class="container">
     <div class="route-one-page">
-      <div>
-        Here, we're inside of the '_id.vue' component, which displays <br>
-        the (dynamic) value of '$route.params.id'...
+      <div style="text-align: justify;">
+        This is the <span class="bold">'_id.vue' component</span>,
+        which displays the dynamic value of '$route.params.id', as dictated by
+        the number at the end of the URI (see address bar).
       </div>
       <div class="results">
         <!-- Interesting, no 'this' used before $route -->
         <div v-if="$route.params.id">
-          {{ routeID }}
+          params.id = <span class="bold">{{ routeID }}</span>
         </div>
         <div v-else>
-          Click on 'Route One' or 'Route Two' just above
+          click either of the blue links above
         </div>
       </div>
-      <div>
-        ...as dictated by the number at the end of the URI (see address bar).
-      </div>
 
-      <br>
       <!--
       The following example would be much cooler except that Nuxt, unlike Vue,
       appears to be re-rendering our component when we navigate to a new route.
@@ -27,10 +24,10 @@
       this data), since normally, vue would not re-render our component, nor
       re-execute our component's methods, etc.
       -->
-      <div>
-        Bonus. If you just changed routes, you'll see the same<br>
-        value delayed by three seconds, here:
-        <span class="results">{{ delayedRouteID }}</span>
+      <div style="text-align: justify;">
+        Bonus! If you just changed routes, you'll see the same value delayed by
+        three seconds, here:
+        <span v-bind:class="classObject">{{ delayedRouteID }}</span>
       </div>
 
     </div>
@@ -64,6 +61,12 @@ export default {
     // ...mapGetters(['titleState'])
     routeID () {
       return this.$route.params.id
+    },
+    classObject () {
+      return {
+        results: true,
+        bold: this.delayedRouteID != "wait for it ..."
+      }
     }
   },
   methods: {
@@ -80,9 +83,24 @@ export default {
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <style scoped>
 
-.results {
+.route-one-page {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F0F0F0;
+  max-width: 500px;
+  width: 90%;
   padding: 10px;
-  color: red;
+  margin: 0 auto;
+}
+
+.results {
+  padding-top: 8px;
+  padding-bottom: 15px;
+  color: #1a53ff;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 </style>
