@@ -2,7 +2,7 @@
   <section class="page-sub-container">
     <div class="hello-vuex-page">
       <div class="introText">
-        <h4>This is the {{ message }} component</h4>
+        <h4>{{ message }} component</h4>
       </div>
 
       <div class="flexContainer">
@@ -39,7 +39,7 @@ export default {
   name: 'hello-vuex-page',
   data () {
     return {
-      message: 'Hello Vuex'
+      message: '"hello-vuex.vue"'
     }
   },
   computed: {

@@ -1,7 +1,7 @@
 <template>
   <section class="page-container">
     <div class="sandbox-page">
-      <h4>We're inside of the Sandbox Page/Component</h4>
+      <h4>"sandbox.vue" - page/component</h4>
       <div class="introText">
         The links/components below are intended to showcase individual
         tools and techniques that I've picked up around the web.

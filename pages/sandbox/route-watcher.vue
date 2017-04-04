@@ -3,7 +3,7 @@
     <div class="route-watcher-page">
 
       <div class="introText">
-        <h4>This is the Route Watcher component</h4>
+        <h4>"route-watcher.vue" component</h4>
       </div>
 
       <div class="flexContainer">

@@ -3,7 +3,7 @@
     <div class="slot-switcher-page">
 
       <div class="introText">
-        <h4>This is the Slot Switcher component</h4>
+        <h4>"slot-switcher.vue" - parent component</h4>
       </div>
 
       <div class="flexContainer">
@@ -19,10 +19,10 @@
 
       <two-slots>
         <div v-bind:slot="slot_1">
-          <p>Slot 1, original content from parent</p>
+          <p>Yada yada, Slot <strong>1</strong> content from parent...</p>
         </div>
         <div v-bind:slot="slot_2">
-          <p>Slot 2, original content from parent</p>
+          <p>Yada yada, Slot <strong>2</strong> content from parent...</p>
         </div>
       </two-slots>
 

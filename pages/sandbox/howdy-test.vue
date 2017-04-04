@@ -3,7 +3,7 @@
     <div class="howdy-test-page">
 
       <div class="introText">
-        <h4>This is the Howdy Test component</h4>
+        <h4>"howdy-test.vue" component</h4>
       </div>
 
       <div class="flexContainer">
