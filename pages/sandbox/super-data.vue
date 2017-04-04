@@ -30,7 +30,7 @@
 <script>
 import axios from 'axios'
 
-const api = `http://swapi.co/api/films/`
+const api = `https://swapi.co/api/films/`
 
 export default {
   name: 'super-data-page',
