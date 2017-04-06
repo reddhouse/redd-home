@@ -1,5 +1,4 @@
-html, body
-{
+html, body {
   background-color: #fff;
   color: #2e2f30;
   /*letter-spacing: 0.5px;*/
@@ -7,33 +6,46 @@ html, body
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  height: 100vh;
-  margin: 0;
+  width: 90vw;
+  margin: 0 auto;
 }
-
-footer
-{
+footer {
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ddd;
 }
-
-a, a:hover, a:focus, a:visited
-{
+a, a:hover, a:focus, a:visited {
   color: #41B883;
 }
-
 .logo {
   width: 243px;
   height: 218px;
 }
-
-.page-enter-active, .page-leave-active
-{
+.page-enter-active, .page-leave-active {
   transition: opacity .5s
 }
-.page-enter, .page-leave-active
-{
+.page-enter, .page-leave-active {
   opacity: 0
+}
+
+/* Media Queries */
+@media (min-width: 321px) {
+  html, body {
+    width: 85vw;
+  }
+}
+@media (min-width: 600px) {
+  html, body {
+    width: 75vw;
+  }
+}
+@media (min-width: 769px) {
+  html, body {
+    width: 60vw;
+  }
+}
+@media (min-width: 1250px) {
+  html, body {
+    width: 50vw;
+  }
 }

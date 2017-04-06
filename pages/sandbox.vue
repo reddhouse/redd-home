@@ -1,6 +1,6 @@
 <template>
   <section class="page-container">
-    <div class="sandbox-page">
+    <div class="sandbox-page center">
       <h4>"sandbox.vue" - page/component</h4>
       <div class="introText">
         The links/components below are intended to showcase individual
